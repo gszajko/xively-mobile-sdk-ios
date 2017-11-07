@@ -7,7 +7,7 @@
 //
 
 #import "XICOMqttSessionFactory.h"
-#import <MQTTSession.h>
+#import "MQTTSession.h"
 #import "XIMessaging.h"
 
 @implementation XICOMqttSessionFactory

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-#import <MQTTSession.h>
+#import "MQTTSession.h"
 
 #import "XITimerProvider.h"
 #import "XITimerImpl.h"

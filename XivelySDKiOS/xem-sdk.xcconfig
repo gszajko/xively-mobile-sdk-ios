@@ -6,10 +6,8 @@
 //  Copyright (c) 2015 LogMeIn Inc.. All rights reserved.
 //
 
-RAPIDJSON_DIRECTORY = $(PROJECT_DIR)/../../lib/rapidjson-1.0.0
-OCMOCK_DIRECTORY = $(PROJECT_DIR)/../../lib/libOCMock-3.0.2
-PAHO_DIRECTORY = $(PROJECT_DIR)/../../lib/libxem-sdk-libpaho-ios-1.0.1129
+OCMOCK_DIRECTORY = $(PROJECT_DIR)/../../lib/OCMock-3.4-1
 
-HEADER_SEARCH_PATHS = $(inherited) . $(OCMOCK_DIRECTORY) $(RAPIDJSON_DIRECTORY) $(PAHO_DIRECTORY)/include
-LIBRARY_SEARCH_PATHS = $(inherited) $(OCMOCK_DIRECTORY) $(PAHO_DIRECTORY)
+HEADER_SEARCH_PATHS = $(inherited) . $(OCMOCK_DIRECTORY)
+LIBRARY_SEARCH_PATHS = $(inherited) $(OCMOCK_DIRECTORY)
 

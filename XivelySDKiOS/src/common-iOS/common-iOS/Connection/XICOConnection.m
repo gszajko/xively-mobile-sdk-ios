@@ -7,7 +7,7 @@
 //
 
 #import "XICOConnection.h"
-#import <MQTTSession.h>
+#import "MQTTSession.h"
 
 #import "XICommonError.h"
 #import "XITimerProvider.h"

@@ -130,7 +130,7 @@
 		F67742CC1A697A8900AA2F0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0910;
 				TargetAttributes = {
 					F63B9D381A8CA6F200774106 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -229,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ../../build/\nmkdir ../../build\n\nCP_PAHO=\"cp \\\"$PAHO_DIRECTORY/libxem-sdk-libpaho-ios.a\\\" \\\"../../build\\\"\"\neval $CP_PAHO\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-build' clean build\n\ncd ../../build\n\n\ntar -cvzf xem-libs-ios.tgz ./*\n                                   \n                                   \n                                   INSTALL_DIR=XivelySDK.framework\n                                   mkdir -p ${INSTALL_DIR}\n                                   mkdir -p ${INSTALL_DIR}/Versions\n                                   mkdir -p ${INSTALL_DIR}/Versions/A\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                   \n                                   cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                   \n                                   libtool ./libxivelycommon-iOS.a ./libxem-sdk-libpaho-ios.a -o ./XivelySDK\n                                   \n                                   \n                                   \n                                   cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                   \n                                   #create relative symbolic link.\n                                   cd ${INSTALL_DIR}\n                                   \n                                   #link\n                                   ln -s A Versions/Current\n                                   ln -s Versions/A/XivelySDK XivelySDK\n                                   ln -s Versions/A/Resources Resources\n                                   ln -s Versions/A/Headers Headers\n                                   \n                                   cd ..\n                                   \n                                   tar -cvzf xem-framework-ios.tgz ./XivelySDK.framework/*\n                                   #tar -cvzf xem-ios.tgz ./*.tgz\n                                   \n";
+			shellScript = "rm -rf ../../build/\nmkdir ../../build\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-build' clean build\n\ncd ../../build\n\n\ntar -cvzf xem-libs-ios.tgz ./*\n                                   \n                                   \n                                   INSTALL_DIR=XivelySDK.framework\n                                   mkdir -p ${INSTALL_DIR}\n                                   mkdir -p ${INSTALL_DIR}/Versions\n                                   mkdir -p ${INSTALL_DIR}/Versions/A\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                   \n                                   cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                   \n                                   libtool ./libxivelycommon-iOS.a -o ./XivelySDK\n                                   \n                                   \n                                   \n                                   cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                   \n                                   #create relative symbolic link.\n                                   cd ${INSTALL_DIR}\n                                   \n                                   #link\n                                   ln -s A Versions/Current\n                                   ln -s Versions/A/XivelySDK XivelySDK\n                                   ln -s Versions/A/Resources Resources\n                                   ln -s Versions/A/Headers Headers\n                                   \n                                   cd ..\n                                   \n                                   tar -cvzf xem-framework-ios.tgz ./XivelySDK.framework/*\n                                   #tar -cvzf xem-ios.tgz ./*.tgz\n                                   \n";
 		};
 		F64A014E1AD6A4900003CFDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -242,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ../../build-selector/\nmkdir ../../build-selector\n\nCP_PAHO=\"cp $PAHO_DIRECTORY/libxem-sdk-libpaho-ios.a ../../build-selector\"\neval $CP_PAHO\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-selector-build' clean build\n\ncd ../../build-selector\n\n\ntar -cvzf xem-libs-ios-selector.tgz ./*\n                                 \n                                 INSTALL_DIR=XivelySDK.framework\n                                 mkdir -p ${INSTALL_DIR}\n                                 mkdir -p ${INSTALL_DIR}/Versions\n                                 mkdir -p ${INSTALL_DIR}/Versions/A\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                 \n                                 cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                 \n                                 libtool ./libxivelycommon-iOS.a ./libxem-sdk-libpaho-ios.a -o ./XivelySDK\n                                 \n                                 \n                                 \n                                 cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                 \n                                 #create relative symbolic link.\n                                 cd ${INSTALL_DIR}\n                                 \n                                 #link\n                                 ln -s A Versions/Current\n                                 ln -s Versions/A/XivelySDK XivelySDK\n                                 ln -s Versions/A/Resources Resources\n                                 ln -s Versions/A/Headers Headers\n                                 \n                                 cd ..\n                                 \n                                 tar -cvzf xem-framework-ios-selector.tgz ./XivelySDK.framework/*\n                                 #tar -cvzf xem-ios.tgz ./*.tgz\n                                 \n                                 \n                                 \n";
+			shellScript = "rm -rf ../../build-selector/\nmkdir ../../build-selector\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-selector-build' clean build\n\ncd ../../build-selector\n\n\ntar -cvzf xem-libs-ios-selector.tgz ./*\n                                 \n                                 INSTALL_DIR=XivelySDK.framework\n                                 mkdir -p ${INSTALL_DIR}\n                                 mkdir -p ${INSTALL_DIR}/Versions\n                                 mkdir -p ${INSTALL_DIR}/Versions/A\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                 \n                                 cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                 \n                                 libtool ./libxivelycommon-iOS.a -o ./XivelySDK\n                                 \n                                 \n                                 \n                                 cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                 \n                                 #create relative symbolic link.\n                                 cd ${INSTALL_DIR}\n                                 \n                                 #link\n                                 ln -s A Versions/Current\n                                 ln -s Versions/A/XivelySDK XivelySDK\n                                 ln -s Versions/A/Resources Resources\n                                 ln -s Versions/A/Headers Headers\n                                 \n                                 cd ..\n                                 \n                                 tar -cvzf xem-framework-ios-selector.tgz ./XivelySDK.framework/*\n                                 #tar -cvzf xem-ios.tgz ./*.tgz\n                                 \n                                 \n                                 \n";
 		};
 		F64A014F1AD6A5130003CFDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ../../build-debug/\nmkdir ../../build-debug\n\nCP_PAHO=\"cp $PAHO_DIRECTORY/libxem-sdk-libpaho-ios.a ../../build-debug\"\neval $CP_PAHO\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-debug-build' clean build\n\ncd ../../build-debug\n\ntar -cvzf xem-libs-ios-debug.tgz ./*\n                                   \n                                   \n                                   INSTALL_DIR=XivelySDK.framework\n                                   mkdir -p ${INSTALL_DIR}\n                                   mkdir -p ${INSTALL_DIR}/Versions\n                                   mkdir -p ${INSTALL_DIR}/Versions/A\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                   \n                                   cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                   \n                                   libtool ./libxivelycommon-iOS.a ./libxem-sdk-libpaho-ios.a -o ./XivelySDK\n                                   \n                                   \n                                   \n                                   cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                   \n                                   #create relative symbolic link.\n                                   cd ${INSTALL_DIR}\n                                   \n                                   #link\n                                   ln -s A Versions/Current\n                                   ln -s Versions/A/XivelySDK XivelySDK\n                                   ln -s Versions/A/Resources Resources\n                                   ln -s Versions/A/Headers Headers\n                                   \n                                   cd ..\n                                   \n                                   tar -cvzf xem-framework-ios-debug.tgz ./XivelySDK.framework/*\n                                   #tar -cvzf xem-ios.tgz ./*.tgz\n                                   \n";
+			shellScript = "rm -rf ../../build-debug/\nmkdir ../../build-debug\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-debug-build' clean build\n\ncd ../../build-debug\n\ntar -cvzf xem-libs-ios-debug.tgz ./*\n                                   \n                                   \n                                   INSTALL_DIR=XivelySDK.framework\n                                   mkdir -p ${INSTALL_DIR}\n                                   mkdir -p ${INSTALL_DIR}/Versions\n                                   mkdir -p ${INSTALL_DIR}/Versions/A\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                   mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                   \n                                   cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                   \n                                   libtool ./libxivelycommon-iOS.a -o ./XivelySDK\n                                   \n                                   \n                                   \n                                   cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                   \n                                   #create relative symbolic link.\n                                   cd ${INSTALL_DIR}\n                                   \n                                   #link\n                                   ln -s A Versions/Current\n                                   ln -s Versions/A/XivelySDK XivelySDK\n                                   ln -s Versions/A/Resources Resources\n                                   ln -s Versions/A/Headers Headers\n                                   \n                                   cd ..\n                                   \n                                   tar -cvzf xem-framework-ios-debug.tgz ./XivelySDK.framework/*\n                                   #tar -cvzf xem-ios.tgz ./*.tgz\n                                   \n";
 		};
 		F64A01501AD6A57B0003CFDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -268,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ../../build-selector-debug/\nmkdir ../../build-selector-debug\n\nCP_PAHO=\"cp $PAHO_DIRECTORY/libxem-sdk-libpaho-ios.a ../../build-selector-debug\"\neval $CP_PAHO\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-selector-debug-build' clean build\n\ncd ../../build-selector-debug\n\n\ntar -cvzf xem-libs-ios-selector-debug.tgz ./*\n                                 \n                                 INSTALL_DIR=XivelySDK.framework\n                                 mkdir -p ${INSTALL_DIR}\n                                 mkdir -p ${INSTALL_DIR}/Versions\n                                 mkdir -p ${INSTALL_DIR}/Versions/A\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                 \n                                 cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                 \n                                 libtool ./libxivelycommon-iOS.a ./libxem-sdk-libpaho-ios.a -o ./XivelySDK\n                                 \n                                 \n                                 \n                                 cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                 \n                                 #create relative symbolic link.\n                                 cd ${INSTALL_DIR}\n                                 \n                                 #link\n                                 ln -s A Versions/Current\n                                 ln -s Versions/A/XivelySDK XivelySDK\n                                 ln -s Versions/A/Resources Resources\n                                 ln -s Versions/A/Headers Headers\n                                 \n                                 cd ..\n                                 \n                                 tar -cvzf xem-framework-ios-selector-debug.tgz ./XivelySDK.framework/*\n                                 #tar -cvzf xem-ios.tgz ./*.tgz\n                                 \n                                 \n                                 \n";
+			shellScript = "rm -rf ../../build-selector-debug/\nmkdir ../../build-selector-debug\n\ncd ../common-iOS\nxcodebuild -project \"common-iOS.xcodeproj\" -target 'common-iOS-selector-debug-build' clean build\n\ncd ../../build-selector-debug\n\n\ntar -cvzf xem-libs-ios-selector-debug.tgz ./*\n                                 \n                                 INSTALL_DIR=XivelySDK.framework\n                                 mkdir -p ${INSTALL_DIR}\n                                 mkdir -p ${INSTALL_DIR}/Versions\n                                 mkdir -p ${INSTALL_DIR}/Versions/A\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Headers\n                                 mkdir -p ${INSTALL_DIR}/Versions/A/Resources\n                                 \n                                 cp -rf ./include/XivelySDK/ ${INSTALL_DIR}/Versions/A/Headers/\n                                 \n                                 libtool ./libxivelycommon-iOS.a -o ./XivelySDK\n                                 \n                                 \n                                 \n                                 cp  ./XivelySDK ${INSTALL_DIR}/Versions/A/XivelySDK\n                                 \n                                 #create relative symbolic link.\n                                 cd ${INSTALL_DIR}\n                                 \n                                 #link\n                                 ln -s A Versions/Current\n                                 ln -s Versions/A/XivelySDK XivelySDK\n                                 ln -s Versions/A/Resources Resources\n                                 ln -s Versions/A/Headers Headers\n                                 \n                                 cd ..\n                                 \n                                 tar -cvzf xem-framework-ios-selector-debug.tgz ./XivelySDK.framework/*\n                                 #tar -cvzf xem-ios.tgz ./*.tgz\n                                 \n                                 \n                                 \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -276,7 +276,7 @@
 		F63B9D391A8CA6F200774106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -285,7 +285,7 @@
 		F63B9D3A1A8CA6F200774106 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -367,6 +367,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6F6F6001A6D2CFD0012C87E /* xem-sdk.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -374,6 +399,29 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6F6F6001A6D2CFD0012C87E /* xem-sdk.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};

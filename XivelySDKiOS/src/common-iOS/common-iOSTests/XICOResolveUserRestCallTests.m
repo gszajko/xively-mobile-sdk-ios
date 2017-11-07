@@ -145,13 +145,13 @@
 }
 
 - (void)testXICOResolveUserRestCallStartRequest {
-    NSString *endUsersServiceUrl = @"https://blueprint.dev.xively.us/api/v1/endUsers";
-    NSString *accountUsersServiceUrl = @"https://blueprint.dev.xively.us/api/v1/accountUsers";
+    NSString *endUsersPath = @"/api/v1/end-users";
+    NSString *accountUsersPath = @"/api/v1/account-users";
     NSString *batchServiceUrl = @"https://blueprint.dev.xively.us/api/v1/batch";
     
-    [[[self.mockServicesConfig expect] andReturn:endUsersServiceUrl] blueprintEndUsersServiceUrl];
-    [[[self.mockServicesConfig expect] andReturn:accountUsersServiceUrl] blueprintAccountUsersServiceUrl];
-    [[[self.mockServicesConfig expect] andReturn:batchServiceUrl] blueprintBatchServiceUrl];
+    [[[self.mockServicesConfig expect] andReturn: endUsersPath] blueprintEndUsersEndpointPath];
+    [[[self.mockServicesConfig expect] andReturn: accountUsersPath] blueprintAccountUsersEndpointPath];
+    [[[self.mockServicesConfig expect] andReturn: batchServiceUrl] blueprintBatchServiceUrl];
     
     [[[self.mockRestCallProvider expect] andReturn:self.mockRestCall] getEmptyRESTCall];
     [[self.mockRestCall expect] setDelegate:(id<NSFileManagerDelegate>)self.call];
@@ -175,18 +175,18 @@
         NSDictionary *request = requests[0];
         if (! [request[@"method"] isEqualToString:@"get"]) return NO;
         NSString *path = request[@"path"];
-        if ([path rangeOfString:endUsersServiceUrl].location == NSNotFound ||
-              [path rangeOfString:accountIdQueryItem].location == NSNotFound ||
-              [path rangeOfString:userIdQueryItem].location == NSNotFound) {
+        if ([path rangeOfString: endUsersPath].location == NSNotFound ||
+              [path rangeOfString: accountIdQueryItem].location == NSNotFound ||
+              [path rangeOfString: userIdQueryItem].location == NSNotFound) {
             return NO;
         }
         
         request = requests[1];
         if (! [request[@"method"] isEqualToString:@"get"]) return NO;
         path = request[@"path"];
-        if ([path rangeOfString:accountUsersServiceUrl].location == NSNotFound ||
-              [path rangeOfString:accountIdQueryItem].location == NSNotFound ||
-              [path rangeOfString:userIdQueryItem].location == NSNotFound) {
+        if ([path rangeOfString: accountUsersPath].location == NSNotFound ||
+              [path rangeOfString: accountIdQueryItem].location == NSNotFound ||
+              [path rangeOfString: userIdQueryItem].location == NSNotFound) {
             return NO;
         }
         

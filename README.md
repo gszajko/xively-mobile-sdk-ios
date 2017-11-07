@@ -66,9 +66,7 @@ This guide assumes that you have a Xively account already setup, if you don't, c
 #### Dependencies and Third Party Content
 There are no external dependencies, however the library is based on and uses the following open source software:
 
-* gmock 1.7.0 - https://github.com/google/googlemock
-* RapidJSON 1.0.0 - https://github.com/miloyip/rapidjson
-* libOCMock 3.0.2  - http://ocmock.org/ios/
+* libOCMock 3.4.1  - http://ocmock.org/ios/
 * libpaho-sdk - (supplied as a prebuilt binary)
 
 #### 1. Download the SDK

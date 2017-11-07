@@ -69,6 +69,7 @@
     
     [[[self.mockConnectionPool expect] andReturn:self.mockPoolCancelable] requestConnectionWithCleanSession: YES
                                                                                                    lastWill: self.lastWill
+                                                                                                        jwt: [OCMArg any]
                                                                                                    delegate: (id<XICOConnectionPoolDelegate>)self.creator];
     [self.creator createMessagingWithCleanSession: YES lastWill: self.lastWill];
     

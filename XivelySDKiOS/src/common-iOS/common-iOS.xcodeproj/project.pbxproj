@@ -112,6 +112,11 @@
 		27B5CAF81BD8DE5400A79CB1 /* XIMSGMessagingCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5CAF21BD8DE5400A79CB1 /* XIMSGMessagingCreator.m */; };
 		27B5CAF91BD8DE5400A79CB1 /* XIMessagingCreatorProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5CAF41BD8DE5400A79CB1 /* XIMessagingCreatorProxy.m */; };
 		27B5CAFA1BD8DE5400A79CB1 /* XIMessagingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5CAF61BD8DE5400A79CB1 /* XIMessagingProxy.m */; };
+		27C2F0B61FB08D89001E8215 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F0B11FB08D89001E8215 /* MQTTDecoder.m */; };
+		27C2F0B71FB08D89001E8215 /* MQTTEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F0B21FB08D89001E8215 /* MQTTEncoder.m */; };
+		27C2F0B81FB08D89001E8215 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F0B31FB08D89001E8215 /* MQTTMessage.m */; };
+		27C2F0B91FB08D89001E8215 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F0B41FB08D89001E8215 /* MQTTSession.m */; };
+		27C2F0BA1FB08D89001E8215 /* MQttTxFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C2F0B51FB08D89001E8215 /* MQttTxFlow.m */; };
 		F62C67091B70F17200E7C6B8 /* XIRESTCallResponseJwtRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C67081B70F17200E7C6B8 /* XIRESTCallResponseJwtRecognizer.m */; };
 		F62C670E1B70F3FA00E7C6B8 /* XIAccess+XIRESTCallResponseRecognizerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C670D1B70F3FA00E7C6B8 /* XIAccess+XIRESTCallResponseRecognizerDelegate.m */; };
 		F62C67111B710CDF00E7C6B8 /* XIRESTCallResponseJwtRecognizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F62C67101B710CDF00E7C6B8 /* XIRESTCallResponseJwtRecognizerTests.m */; };
@@ -317,6 +322,16 @@
 		27B5CB011BD8DEE700A79CB1 /* XIMessagingStateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIMessagingStateListener.h; sourceTree = "<group>"; };
 		27B5CB021BD8DEE700A79CB1 /* XIMessagingSubscriptionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIMessagingSubscriptionListener.h; sourceTree = "<group>"; };
 		27B5CB031BD8DEE700A79CB1 /* XISessionServices+Messaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XISessionServices+Messaging.h"; sourceTree = "<group>"; };
+		27C2F0AB1FB08D7B001E8215 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
+		27C2F0AC1FB08D7B001E8215 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
+		27C2F0AD1FB08D7B001E8215 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
+		27C2F0AE1FB08D7B001E8215 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
+		27C2F0AF1FB08D7B001E8215 /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQttTxFlow.h; sourceTree = "<group>"; };
+		27C2F0B11FB08D89001E8215 /* MQTTDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTDecoder.m; sourceTree = "<group>"; };
+		27C2F0B21FB08D89001E8215 /* MQTTEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTEncoder.m; sourceTree = "<group>"; };
+		27C2F0B31FB08D89001E8215 /* MQTTMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTMessage.m; sourceTree = "<group>"; };
+		27C2F0B41FB08D89001E8215 /* MQTTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTSession.m; sourceTree = "<group>"; };
+		27C2F0B51FB08D89001E8215 /* MQttTxFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQttTxFlow.m; sourceTree = "<group>"; };
 		6B607ABB1DB4CC6700C0E00C /* XIOrganizationImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIOrganizationImports.h; path = OrganizationInfo/XIOrganizationImports.h; sourceTree = "<group>"; };
 		6B607ABC1DB4CCD900C0E00C /* XIEndUserImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XIEndUserImports.h; path = EndUserInfo/XIEndUserImports.h; sourceTree = "<group>"; };
 		F627B7D01BBEA94200A060A5 /* XICOConnecting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XICOConnecting.h; sourceTree = "<group>"; };
@@ -728,6 +743,30 @@
 			path = Messaging;
 			sourceTree = "<group>";
 		};
+		27C2F0AA1FB08D7B001E8215 /* Paho */ = {
+			isa = PBXGroup;
+			children = (
+				27C2F0AB1FB08D7B001E8215 /* MQTTDecoder.h */,
+				27C2F0AC1FB08D7B001E8215 /* MQTTEncoder.h */,
+				27C2F0AD1FB08D7B001E8215 /* MQTTMessage.h */,
+				27C2F0AE1FB08D7B001E8215 /* MQTTSession.h */,
+				27C2F0AF1FB08D7B001E8215 /* MQttTxFlow.h */,
+			);
+			path = Paho;
+			sourceTree = "<group>";
+		};
+		27C2F0B01FB08D89001E8215 /* Paho */ = {
+			isa = PBXGroup;
+			children = (
+				27C2F0B11FB08D89001E8215 /* MQTTDecoder.m */,
+				27C2F0B21FB08D89001E8215 /* MQTTEncoder.m */,
+				27C2F0B31FB08D89001E8215 /* MQTTMessage.m */,
+				27C2F0B41FB08D89001E8215 /* MQTTSession.m */,
+				27C2F0B51FB08D89001E8215 /* MQttTxFlow.m */,
+			);
+			path = Paho;
+			sourceTree = "<group>";
+		};
 		F627B7CF1BBEA94200A060A5 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
@@ -926,6 +965,7 @@
 		F66CA2161B14AC340069C0B7 /* Internals */ = {
 			isa = PBXGroup;
 			children = (
+				27C2F0AA1FB08D7B001E8215 /* Paho */,
 				F627B7D91BBEA9D400A060A5 /* Log */,
 				F627B7D71BBEA97200A060A5 /* FSM */,
 				F627B7CF1BBEA94200A060A5 /* Connection */,
@@ -1084,6 +1124,7 @@
 				F68FC5C31A6E4F2800610222 /* Public Headers */,
 				F66797AA1AF0D51800C2DCE4 /* Internal Headers */,
 				F6F6CFD01AEFD071007C8CCB /* Selector Headers */,
+				27C2F0B01FB08D89001E8215 /* Paho */,
 				275BC0A01B42B6B500D859B7 /* FSM */,
 				062499A61D7043B7002804D8 /* EndUserInfo */,
 				275BC0811B41A08500D859B7 /* Log */,
@@ -1298,7 +1339,7 @@
 		F6DBF4741A66830200EE309D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "LogMeIn Inc.";
 				TargetAttributes = {
 					270BAFD81BC66CDB0079D654 = {
@@ -1559,6 +1600,7 @@
 				F63B9D4D1A8D015000774106 /* XIRESTCallProviderInternal.m in Sources */,
 				F667B6D81BD7E88100EFF935 /* XIAuthentication.m in Sources */,
 				271281801B4FE20100734F4F /* XICOMqttSessionFactory.m in Sources */,
+				27C2F0B91FB08D89001E8215 /* MQTTSession.m in Sources */,
 				F6F1909F1BA6F5F400215A30 /* XITimeSeriesItem.m in Sources */,
 				065E37C71D5B07FC004E39B9 /* XIDeviceInfoRestCall.m in Sources */,
 				F6A83ADE1B6A6449000FFB4E /* XICOAuthenticationRestCall.m in Sources */,
@@ -1569,8 +1611,10 @@
 				F6F190A91BA704FC00215A30 /* XITSTimeSeriesMeta.m in Sources */,
 				F6681B5D1B6F6FC50020C63C /* XICOCreateMqttCredentialsRestCallProvider.m in Sources */,
 				F694418F1BA80B4800CBED9D /* XITSTimeSeries.m in Sources */,
+				27C2F0B61FB08D89001E8215 /* MQTTDecoder.m in Sources */,
 				271F36611B665CA700E76B95 /* XICOConnectionFactory.m in Sources */,
 				F66CA24F1B14AEA90069C0B7 /* XISessionServices.m in Sources */,
+				27C2F0B81FB08D89001E8215 /* MQTTMessage.m in Sources */,
 				275BC07A1B419F3100D859B7 /* XICOAuthentication.m in Sources */,
 				065E37C41D5B0626004E39B9 /* XIDeviceInfoRestCallProvider.m in Sources */,
 				271281781B4EA5BD00734F4F /* XICOConnection.m in Sources */,
@@ -1592,6 +1636,7 @@
 				F65365EF1B9D7D74003EB134 /* XITimerProviderImpl.m in Sources */,
 				F6620B4B1B5E6BF800ECAA4B /* XIRESTDefaultHeadersProvider.m in Sources */,
 				F664C95E1B8B66D6008CA5BA /* XIDeviceChannel.m in Sources */,
+				27C2F0B71FB08D89001E8215 /* MQTTEncoder.m in Sources */,
 				F6F190B31BA70AB700215A30 /* XITSTimeSeriesRestCallProvider.m in Sources */,
 				27B5CAF91BD8DE5400A79CB1 /* XIMessagingCreatorProxy.m in Sources */,
 				060139B31D6468EF006A4648 /* XIOrganizationInfoMeta.m in Sources */,
@@ -1610,6 +1655,7 @@
 				F6681B571B6F58A70020C63C /* XICOCreateMqttCredentialsRestCall.m in Sources */,
 				065E37BF1D5A151D004E39B9 /* XIDIDeviceHandler.m in Sources */,
 				27B5CAF81BD8DE5400A79CB1 /* XIMSGMessagingCreator.m in Sources */,
+				27C2F0BA1FB08D89001E8215 /* MQttTxFlow.m in Sources */,
 				F667B6DB1BD7ED6100EFF935 /* XICOBlueprintUser+AccessBlueprintUserType.m in Sources */,
 				062499B91D7043E8002804D8 /* XIEndUserInfoRestCallProvider.m in Sources */,
 				F67742581A69473300AA2F0E /* NSMutableArray+nonRetaining.m in Sources */,
@@ -1682,7 +1728,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "common-iOSE2ETests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1690,7 +1736,6 @@
 					XCTest,
 					"-lOCMock",
 					"-ObjC",
-					"-lxem-sdk-libpaho-ios",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.logmein.common-iOSE2ETests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1705,7 +1750,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "common-iOSE2ETests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1713,7 +1758,6 @@
 					XCTest,
 					"-lOCMock",
 					"-ObjC",
-					"-lxem-sdk-libpaho-ios",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.logmein.common-iOSE2ETests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1800,19 +1844,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "./common-iOS/common-iOS.pch";
@@ -1835,7 +1889,7 @@
 					"\"${SRCROOT}/common-iOS/Selector Headers\"",
 					"\"${SRCROOT}/common-iOS/Public Headers\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode-marker";
@@ -1857,19 +1911,28 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "./common-iOS/common-iOS.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1885,7 +1948,7 @@
 					"\"${SRCROOT}/common-iOS/Selector Headers\"",
 					"\"${SRCROOT}/common-iOS/Public Headers\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
 				SDKROOT = iphoneos;
@@ -1899,10 +1962,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06EBF0F21A7919D200C7A3E4 /* xem-sdk.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -1912,7 +1971,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				ONLY_ACTIVE_ARCH = NO;
@@ -1927,10 +1986,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06EBF0F21A7919D200C7A3E4 /* xem-sdk.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -1940,7 +1995,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1965,7 +2020,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "common-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
@@ -1975,7 +2030,6 @@
 					XCTest,
 					"-lOCMock",
 					"-ObjC",
-					"-lxem-sdk-libpaho-ios",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1995,7 +2049,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "common-iOSTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
@@ -2005,7 +2059,6 @@
 					XCTest,
 					"-lOCMock",
 					"-ObjC",
-					"-lxem-sdk-libpaho-ios",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
